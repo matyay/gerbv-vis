@@ -63,7 +63,7 @@ def generate_gerbv_project(file, gerbers, layer, show_paste=False):
                 layer_idx += 1
 
             # Silkscreen
-            l = "{}_SilkS".format(prefix)
+            l = "{}_Silkscreen".format(prefix)
             if l in gerbers:
                 write_layer(fp, gerbers[l], layer_idx, COLORS["silkscreen"])
                 layer_idx += 1
